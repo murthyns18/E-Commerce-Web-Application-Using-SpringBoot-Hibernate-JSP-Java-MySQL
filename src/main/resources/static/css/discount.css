@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8fafc;
+	padding: 20px;
+}
+
+.container {
+	width: 50%;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin: 10px 0 5px;
+	text-align: left;
+}
+
+input, select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #6366f1;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #4f46e5;
+}
+
+.success-message {
+	color: green;
+	background: #d4edda;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #c3e6cb;
+	border-radius: 5px;
+	text-align: center;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.back-link {
+	display: inline-block;
+	margin-top: 15px;
+	text-decoration: none;
+	background-color: #dc2626;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.back-link:hover {
+	background-color: #b91c1c;
+}

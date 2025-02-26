@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+.container {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+	color: #1e293b; 
+}
+
+.checkout-form input, .checkout-form select, .checkout-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	background-color: #f8fafc; 
+	color: #1e293b;  
+}
+
+.checkout-form textarea {
+	resize: vertical;  
+	min-height: 100px; 
+}
+
+.checkout-form input:read-only {
+	background-color: #e2e8f0;  
+	cursor: not-allowed;
+}
+
+.checkout-btn {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	background-color: #10b981;  
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+.checkout-btn:hover {
+	background-color: #059669; 
+}
+
+.login-message {
+	text-align: center;
+	color: #dc2626;  
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.login-btn {
+	display: block;
+	text-align: center;
+	padding: 12px;
+	background-color: #6366f1;  
+	color: white;
+	text-decoration: none;
+	width: 150px;
+	margin: 20px auto;
+	border-radius: 5px;
+	transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+	background-color: #4f46e5;  
+}
