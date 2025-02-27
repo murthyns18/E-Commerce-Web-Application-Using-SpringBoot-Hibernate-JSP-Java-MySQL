@@ -1,7 +1,6 @@
 package com.ns.ecommerce.main.service;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +10,8 @@ import com.ns.ecommerce.main.model.Discount;
 import com.ns.ecommerce.main.repository.DiscountRepository;
 
 @Service
-public class DiscountService {
+public class DiscountService 
+{
 
     @Autowired
     private DiscountRepository discountRepository;
@@ -20,40 +20,51 @@ public class DiscountService {
     private FileUploadService fileUploadService;
 
     public Discount getDiscount() {
-        List<Discount> discounts = discountRepository.findAll();
-        return discounts.isEmpty() ? null : discounts.get(0);
+        return discountRepository.findTopByOrderByIdDesc();
     }
 
     public void saveOrUpdateDiscount(Discount discount, MultipartFile offerImage) {
-        List<Discount> discounts = discountRepository.findAll();
+        Discount existingDiscount = discountRepository.findTopByOrderByIdDesc();
 
-        if (offerImage != null && !offerImage.isEmpty()) {
-            try {
-                String fileName = fileUploadService.uploadImage(offerImage);
-                discount.setImagePath(fileName);
-                System.out.println("Image Filename: " + fileName);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (!discounts.isEmpty()) {
-            Discount existingDiscount = discounts.get(0);
+        if (existingDiscount != null) 
+        {
             existingDiscount.setOfferName(discount.getOfferName());
             existingDiscount.setDiscountPercentage(discount.getDiscountPercentage());
             existingDiscount.setAvailable(discount.isAvailable());
 
-            if (discount.getImagePath() != null) {
-                existingDiscount.setImagePath(discount.getImagePath());
+            if (offerImage != null && !offerImage.isEmpty()) 
+            {
+                try 
+                {
+                    String fileName = fileUploadService.uploadImage(offerImage);
+                    existingDiscount.setImagePath(fileName);  
+                } catch (IOException e) 
+                {
+                    System.err.println("Error uploading image: " + e.getMessage());
+                }
             }
 
             discountRepository.save(existingDiscount);
-        } else {
+        } else 
+        {
+            if (offerImage != null && !offerImage.isEmpty()) 
+            {
+                try
+                {
+                    String fileName = fileUploadService.uploadImage(offerImage);
+                    discount.setImagePath(fileName); 
+                } catch (IOException e) 
+                {
+                    System.err.println("Error uploading image: " + e.getMessage());
+                }
+            }
+
             discountRepository.save(discount);
         }
     }
 
-    public Discount getLatestDiscount() {
+    public Discount getLatestDiscount()
+    {
         return discountRepository.findTopByOrderByIdDesc();
     }
 }
