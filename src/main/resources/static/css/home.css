@@ -414,7 +414,8 @@ footer a:hover {
 }
 
 .price .original-price {
-    color: #888;
+    color:black;
+    align-content:center;
     margin-right: 5px;
 }
 
