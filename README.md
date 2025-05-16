@@ -10,26 +10,50 @@
 
 
 
-**Home Page**
+**Discount Page**
 ![image alt]()
-**Home Page**
+
+
+
+**Cart Page**
 ![image alt]()
-**Home Page**
+
+
+
+**Searching Product Page**
 ![image alt]()
-**Home Page**
+
+
+
+**User Login Page**
 ![image alt]()
-**Home Page**
+
+
+
+**User Registration Page**
 ![image alt]()
-**Home Page**
+
+
+**Admin Login Page**
 ![image alt]()
-**Home Page**
+
+
+**Adding Product Page**
 ![image alt]()
-**Home Page**
+
+
+**Editing Product Page**
 ![image alt]()
-**Home Page**
+
+
+**Shipping Product Page**
 ![image alt]()
-**Home Page**
+
+
+**Editing Discount Page**
 ![image alt]()
+
+
 **Home Page**
 ![image alt]()
 **Home Page**
