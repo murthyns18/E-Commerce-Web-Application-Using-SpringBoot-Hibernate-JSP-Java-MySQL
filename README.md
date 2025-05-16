@@ -11,7 +11,7 @@
 
 
 **Discount Page**
-![image alt]()
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/e88235a562e5fe97f9471e120a1e513558c3aed4/Discount.png)
 
 
 
@@ -35,11 +35,11 @@
 
 
 **Admin Login Page**
-![image alt]()
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/e88235a562e5fe97f9471e120a1e513558c3aed4/Admin%20Login.png)
 
 
-**Adding Product Page**
-![image alt]()
+**Admin Dashboard Page**
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/e88235a562e5fe97f9471e120a1e513558c3aed4/Admin%20Dashboard.png)
 
 
 **Editing Product Page**
