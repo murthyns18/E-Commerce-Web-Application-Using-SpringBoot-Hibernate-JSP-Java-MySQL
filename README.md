@@ -60,10 +60,14 @@
 
 
 
-**Home Page**
-![image alt]()
-**Home Page**
-![image alt]()
+**Placing Order Page**
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/31cad9c0c2c6dc16565cb02933886007e4eb7779/Order%20Confirmation.png)
+
+
+**Order Confirmed Page**
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/31cad9c0c2c6dc16565cb02933886007e4eb7779/Order%20Confirmed.png)
+
+
 **Home Page**
 ![image alt]()
 **Home Page**
