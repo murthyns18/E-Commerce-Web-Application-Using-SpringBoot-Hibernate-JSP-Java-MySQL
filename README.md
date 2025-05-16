@@ -16,7 +16,7 @@
 
 
 **Cart Page**
-![image alt]()
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/16cac0e0c71b7430b5d10d03ca5fc89901188b99/Cart.png)
 
 
 
@@ -32,6 +32,11 @@
 
 **User Registration Page**
 ![image alt]()
+
+
+**Contact Us Page**
+![image alt](https://github.com/murthyns18/E-Commerce-Web-Application-Using-SpringBoot-Hibernate-JSP-Java-MySQL/blob/16cac0e0c71b7430b5d10d03ca5fc89901188b99/Contact%20Us.png)
+
 
 
 **Admin Login Page**
@@ -54,8 +59,7 @@
 ![image alt]()
 
 
-**Home Page**
-![image alt]()
+
 **Home Page**
 ![image alt]()
 **Home Page**
